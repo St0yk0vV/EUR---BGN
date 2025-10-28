@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BGN ↔ EUR Калкулатор</title>
+</head>
+<body>
+  <h1>💱 BGN ↔ EUR Калкулатор</h1>
+  <p>Фиксиран курс: <strong>1 EUR = 1.95583 BGN</strong></p>
+
+  <div>
+    <label for="direction">Посока:</label><br>
+    <select id="direction">
+      <option value="bgn2eur">лв → € (BGN → EUR)</option>
+      <option value="eur2bgn">€ → лв (EUR → BGN)</option>
+    </select>
+  </div>
+  <br>
+
+  <div>
+    <label for="amount">Сума:</label><br>
+    <input
+      type="number"
+      id="amount"
+      placeholder="Въведи сума"
+      step="0.01"
+      min="0"
+      inputmode="decimal"
+    />
+  </div>
+  <br>
+
+  <div>
+    <button id="convertBtn">Изчисли</button>
+    <button id="swapBtn">Смени посоката</button>
+    <button id="clearBtn">Изчисти</button>
+  </div>
+
+  <h2>Резултат</h2>
+  <p id="result">Резултатът ще се появи тук.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
